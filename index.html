@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="percentage-head">
+    <h2>Percentage Calculator</h2>
+    </div>
+    <div id="marks-head">
+        <h3>Enter marks out of 100</h3>
+    </div>
+
+    <form id="marks-form">
+        <div class="science">
+            <input type="number" id="science" placeholder="Science">
+        </div>
+        <div class="maths">
+            <input type="number" id="maths" placeholder="Maths">
+        </div>
+        <div class="computer">
+            <input type="number" id="computer" placeholder="Computer">
+        </div>
+        
+            <button type="button" onclick="saveMarks()">Submit</button>
+        
+    </form>
+    <div id="percentage">
+        <h3></h3>
+    </div>
+    <div id="grade">
+        <h3></h3>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

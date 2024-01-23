@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap');
+
+*{
+    background-image: url(background-green.avif);
+}
+#percentage-head{
+    background: #fff;
+    color: #3dff3d;
+    text-align: center;
+    margin: 0px 200px;
+    padding: 0px;
+    font-size: 50px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#marks-head{
+    color: #73f912;
+    text-align: center;
+    margin: 0px 350px;
+    padding: 0px 35px;
+    font-size: 30px;
+    width: 35%;
+    font-family: 'Chakra Petch', sans-serif;
+    
+    
+
+}
+input[type=number]{
+    text-align: center;
+    width:  50%;
+    align-items: center;
+    margin: 30px 280px;
+    border: none;
+    border-bottom: 3px solid rgb(159, 237, 41);
+    color: #f3f2e2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50px;
+    font-size: 40px;
+}
+/* To remove spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+::placeholder{
+    color: rgb(226, 255, 35);
+    font-size:40px ;
+    font-family: 'Brush Script MT', cursive;
+}
+button{
+    background: #16482c;
+    color:rgb(223, 223, 223);
+    width: 300px;
+    height: 70px;
+    margin: 30px 470px;
+    font-size: 60px;
+    font-family: 'Chakra Petch', sans-serif;
+    border-radius: 40px;
+    font: bolder;
+    cursor: pointer;
+}
+/* Button Animation*/
+button{
+    animation:wiggle 2s linear infinite;
+}
+@keyframes wiggle{
+    0% , 7% {
+        transform: rotateZ(0);
+    }
+    15%{
+        transform: rotateZ(-15deg);
+    }
+    20%{
+        transform: rotateZ(10deg);
+    }
+    25%{
+        transform: rotateZ(-10deg);
+    }
+    30%{
+        transform: rotateZ(6deg);
+    }
+    35%{
+        transform: rotateZ(-4deg);
+    }
+    40% , 100%{
+        transform: rotateZ(0);
+    }
+}
+#percentage{
+    color: #3dff3d;
+    background: #000000;
+    font-size: 80px;
+    transition: cubic-bezier(0.39, 0.575, 0.565, 1);
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#grade{
+    color: #3dff3d;
+    background: #000000;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+}
