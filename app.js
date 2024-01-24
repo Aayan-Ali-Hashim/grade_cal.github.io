@@ -1,25 +1,28 @@
 function saveMarks(){
-    var sciencemarks = document.getElementById('science').value;
+    let sciencemarks = document.getElementById('science').value;
     if (sciencemarks<=100){
         Total = parseInt(sciencemarks);
     }
     else{
-        window.alert("Please enter correct Science marks");
+        return window.alert("Please enter correct Science marks");
+        
     }
 
-    var mathmarks = document.getElementById('maths').value;
+    let mathmarks = document.getElementById('maths').value;
     if (mathmarks<=100){
         Total = Total + parseInt(mathmarks);
     }
     else{
-        window.alert("Please enter correct Math marks");
+        return window.alert("Please enter correct Math marks");
+
     }
-    var computermarks = document.getElementById('computer').value;
+    let computermarks = document.getElementById('computer').value;
     if (computermarks<=100){
         Total = Total + parseInt(computermarks);
     }
     else{
-        window.alert("Please enter correct Computer marks ");
+        return window.alert("Please enter correct Computer marks ");
+        
     }
     percentage = Math.round(Total/300 * 100);
     if (percentage>0){
