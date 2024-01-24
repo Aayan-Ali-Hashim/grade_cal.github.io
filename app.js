@@ -25,6 +25,9 @@ function saveMarks(){
     if (percentage>0){
     document.querySelector("#percentage").innerHTML = "Your percentage:"+""+percentage+"%";
     }
+    else if(percentage>100){
+        document.querySelector("#percentage").innerHTML = "Your percentage:"+" "+"-";
+    }
     else{
         document.querySelector("#percentage").innerHTML = "Your percentage:"+" "+"-";
     }
